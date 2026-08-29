@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AGENT 47 — THE FILE HUNT</title>
+
+    <meta
+        name="description"
+        content="100 boutons. Un seul mène au vrai fichier. Bonne chance."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Effets d'arrière-plan -->
+    <div class="background-effects">
+        <div class="glitch-line line-1"></div>
+        <div class="glitch-line line-2"></div>
+        <div class="glitch-line line-3"></div>
+
+        <div class="noise"></div>
+        <div class="scanlines"></div>
+    </div>
+
+
+    <!-- Contenu principal -->
+    <main class="container">
+
+        <!-- En-tête -->
+        <header class="hero">
+
+            <div class="warning">
+                ⚠ SYSTEM // CLASSIFIED ⚠
+            </div>
+
+            <h1 data-text="THE FILE HUNT">
+                THE FILE HUNT
+            </h1>
+
+            <div class="subtitle">
+                <span class="blink">●</span>
+                100 PORTES — 1 SEUL BON CHEMIN
+                <span class="blink">●</span>
+            </div>
+
+            <p class="intro">
+                Quelque part ici se trouve le fichier.
+                <br>
+                Les autres boutons sont... probablement inutiles.
+            </p>
+
+            <div class="agent-reference">
+                <span>PROTOCOL:</span>
+                <strong>47</strong>
+            </div>
+
+        </header>
+
+
+        <!-- Zone des boutons -->
+        <section class="button-zone">
+
+            <div class="section-title">
+                <span>/// SELECT YOUR DESTINY ///</span>
+            </div>
+
+            <!--
+                Les 100 boutons sont créés automatiquement
+                par script.js.
+
+                Le bouton 47 contient le vrai lien Google Drive.
+            -->
+            <div id="button-grid"></div>
+
+        </section>
+
+
+        <!-- Message d'état -->
+        <section class="status-panel">
+
+            <div class="status-header">
+                <span class="status-dot"></span>
+                SYSTEM STATUS
+            </div>
+
+            <div id="status-message">
+                En attente d'une décision...
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <div class="footer-glitch">
+                █ ACCESS DENIED █ ACCESS DENIED █ ACCESS DENIED █
+            </div>
+
+            <p>
+                © 2026 // CLASSIFIED OPERATION
+            </p>
+
+            <p class="small-warning">
+                Choisissez judicieusement.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!--
+        MODAL / MESSAGE DE RÉACTION
+        Utilisé par script.js lors des clics.
+    -->
+    <div id="reaction-overlay" class="reaction-overlay">
+
+        <div class="reaction-box">
+
+            <div id="reaction-number">
+                00
+            </div>
+
+            <div id="reaction-title">
+                ACCESSING...
+            </div>
+
+            <div id="reaction-text">
+                Analyse du protocole en cours...
+            </div>
+
+            <button id="close-reaction">
+                CONTINUER
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+</body>
+</html>
